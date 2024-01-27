@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		D547BAA72B64C91F003CFEBE /* LutFilterCamaraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547BAA62B64C91F003CFEBE /* LutFilterCamaraApp.swift */; };
-		D547BAA92B64C91F003CFEBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547BAA82B64C91F003CFEBE /* ContentView.swift */; };
 		D547BAAB2B64C920003CFEBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D547BAAA2B64C920003CFEBE /* Assets.xcassets */; };
 		D547BAAE2B64C920003CFEBE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D547BAAD2B64C920003CFEBE /* Preview Assets.xcassets */; };
+		D547BAB82B64D3F2003CFEBE /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547BAB72B64D3F2003CFEBE /* CameraViewModel.swift */; };
+		D547BABA2B64D509003CFEBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547BAB92B64D509003CFEBE /* ContentView.swift */; };
+		D547BABC2B64D523003CFEBE /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547BABB2B64D523003CFEBE /* CameraView.swift */; };
+		D547BABE2B64D5D3003CFEBE /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = D547BABD2B64D5D3003CFEBE /* Camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D547BAA32B64C91F003CFEBE /* LutFilterCamara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LutFilterCamara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D547BAA62B64C91F003CFEBE /* LutFilterCamaraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LutFilterCamaraApp.swift; sourceTree = "<group>"; };
-		D547BAA82B64C91F003CFEBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D547BAAA2B64C920003CFEBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D547BAAD2B64C920003CFEBE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D547BAB72B64D3F2003CFEBE /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		D547BAB92B64D509003CFEBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D547BABB2B64D523003CFEBE /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		D547BABD2B64D5D3003CFEBE /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,11 @@
 		D547BAA52B64C91F003CFEBE /* LutFilterCamara */ = {
 			isa = PBXGroup;
 			children = (
+				D547BABF2B64DB3C003CFEBE /* LUT */,
+				D547BAB62B64D3D6003CFEBE /* Model */,
+				D547BAB42B64D3BA003CFEBE /* View */,
+				D547BAB52B64D3C1003CFEBE /* ViewModel */,
 				D547BAA62B64C91F003CFEBE /* LutFilterCamaraApp.swift */,
-				D547BAA82B64C91F003CFEBE /* ContentView.swift */,
 				D547BAAA2B64C920003CFEBE /* Assets.xcassets */,
 				D547BAAC2B64C920003CFEBE /* Preview Content */,
 			);
@@ -65,6 +74,38 @@
 				D547BAAD2B64C920003CFEBE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D547BAB42B64D3BA003CFEBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D547BAB92B64D509003CFEBE /* ContentView.swift */,
+				D547BABB2B64D523003CFEBE /* CameraView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D547BAB52B64D3C1003CFEBE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D547BAB72B64D3F2003CFEBE /* CameraViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D547BAB62B64D3D6003CFEBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D547BABD2B64D5D3003CFEBE /* Camera.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D547BABF2B64DB3C003CFEBE /* LUT */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LUT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D547BAA92B64C91F003CFEBE /* ContentView.swift in Sources */,
 				D547BAA72B64C91F003CFEBE /* LutFilterCamaraApp.swift in Sources */,
+				D547BABE2B64D5D3003CFEBE /* Camera.swift in Sources */,
+				D547BAB82B64D3F2003CFEBE /* CameraViewModel.swift in Sources */,
+				D547BABA2B64D509003CFEBE /* ContentView.swift in Sources */,
+				D547BABC2B64D523003CFEBE /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +316,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LutFilterCamara/Preview Content\"";
+				DEVELOPMENT_TEAM = 5MH57K7U7U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 접근을 허용해주세요.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,8 +348,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LutFilterCamara/Preview Content\"";
+				DEVELOPMENT_TEAM = 5MH57K7U7U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라 접근을 허용해주세요.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
